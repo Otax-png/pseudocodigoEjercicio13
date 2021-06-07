@@ -1,0 +1,30 @@
+Algoritmo Algoritmo13
+	Definir checkDeseo,num1,num2 Como Entero
+	Repetir
+		Escribir '1. Suma'
+		Escribir '2. Division'
+		Escribir '3. Salir'
+		Leer checkDeseo
+		Si checkDeseo=1 Entonces
+			Escribir 'Escribe 2 numeros para ser sumados'
+			Leer num1,num2
+			suma <- num1+num2
+			Escribir 'La suma de los numeros es ',suma
+		SiNo
+			Si checkDeseo=2 Entonces
+				Escribir 'Escribe 2 numeros, primero el dividendo y segundo el divisor'
+				Leer num1
+				Leer num2
+				Si num2<>0 Entonces
+					division <- num1/num2
+				SiNo
+					Escribir 'Ingrese un divisor mayor a 0'
+				FinSi
+			SiNo
+				Si checkDeseo=3 Entonces
+					Escribir 'Adios'
+				FinSi
+			FinSi
+		FinSi
+	Hasta Que checkDeseo=3
+FinAlgoritmo
